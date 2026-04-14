@@ -12,6 +12,9 @@ services:
     environment:
       - TZ=Australia/Brisbane
       - PYTHONUNBUFFERED=1
+      - TELEGRAM_TOKEN=<INSERT_HERE>
+      - TELEGRAM_CHAT_ID=<INSERT_HERE>
+      - DISCORD_WEBHOOK_URL=<URL>
 
 volumes:
   danmurphy-data:
