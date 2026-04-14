@@ -1,5 +1,5 @@
 services:
-  danmurphy-notifier:
+  danmurphy-cellar-notifier:
     build: .
     container_name: danmurphy-cellar-notifier
 
