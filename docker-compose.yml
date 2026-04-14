@@ -1,0 +1,17 @@
+services:
+  danmurphy-notifier:
+    build: .
+    container_name: danmurphy-cellar-notifier
+
+    volumes:
+      - ./:/app
+      - danmurphy-data:/data
+
+    restart: unless-stopped
+
+    environment:
+      - TZ=Australia/Brisbane
+      - PYTHONUNBUFFERED=1
+
+volumes:
+  danmurphy-data:
